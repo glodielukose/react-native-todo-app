@@ -1,0 +1,49 @@
+{
+  "buildFiles": [
+    "/home/glodielukose/react-native/react-native-todo-app/node_modules/react-native-safe-area-context/android/src/main/jni/CMakeLists.txt",
+    "/home/glodielukose/react-native/react-native-todo-app/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni/CMakeLists.txt",
+    "/home/glodielukose/react-native/react-native-todo-app/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/home/glodielukose/Android/Sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/home/glodielukose/react-native/react-native-todo-app/android/app/.cxx/Debug/5f4i6a15/arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/home/glodielukose/Android/Sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/home/glodielukose/react-native/react-native-todo-app/android/app/.cxx/Debug/5f4i6a15/arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "react_codegen_RNVectorIconsSpec::@479809fae146501fd34d": {
+      "artifactName": "react_codegen_RNVectorIconsSpec",
+      "abi": "arm64-v8a",
+      "runtimeFiles": []
+    },
+    "react_codegen_safeareacontext::@7984cd80db47aa7b952a": {
+      "artifactName": "react_codegen_safeareacontext",
+      "abi": "arm64-v8a",
+      "output": "/home/glodielukose/react-native/react-native-todo-app/android/app/build/intermediates/cxx/Debug/5f4i6a15/obj/arm64-v8a/libreact_codegen_safeareacontext.so",
+      "runtimeFiles": [
+        "/home/glodielukose/.gradle/caches/8.10.2/transforms/0b396a6571faea36ef3e81439b17aeab/transformed/jetified-fbjni-0.6.0/prefab/modules/fbjni/libs/android.arm64-v8a/libfbjni.so",
+        "/home/glodielukose/.gradle/caches/8.10.2/transforms/ab8a065cc64130fd47ed8619d0ad071a/transformed/jetified-react-android-0.76.2-debug/prefab/modules/jsi/libs/android.arm64-v8a/libjsi.so",
+        "/home/glodielukose/.gradle/caches/8.10.2/transforms/ab8a065cc64130fd47ed8619d0ad071a/transformed/jetified-react-android-0.76.2-debug/prefab/modules/reactnative/libs/android.arm64-v8a/libreactnative.so"
+      ]
+    },
+    "appmodules::@6890427a1f51a3e7e1df": {
+      "artifactName": "appmodules",
+      "abi": "arm64-v8a",
+      "output": "/home/glodielukose/react-native/react-native-todo-app/android/app/build/intermediates/cxx/Debug/5f4i6a15/obj/arm64-v8a/libappmodules.so",
+      "runtimeFiles": [
+        "/home/glodielukose/react-native/react-native-todo-app/android/app/build/intermediates/cxx/Debug/5f4i6a15/obj/arm64-v8a/libreact_codegen_safeareacontext.so",
+        "/home/glodielukose/.gradle/caches/8.10.2/transforms/0b396a6571faea36ef3e81439b17aeab/transformed/jetified-fbjni-0.6.0/prefab/modules/fbjni/libs/android.arm64-v8a/libfbjni.so",
+        "/home/glodielukose/.gradle/caches/8.10.2/transforms/ab8a065cc64130fd47ed8619d0ad071a/transformed/jetified-react-android-0.76.2-debug/prefab/modules/jsi/libs/android.arm64-v8a/libjsi.so",
+        "/home/glodielukose/.gradle/caches/8.10.2/transforms/ab8a065cc64130fd47ed8619d0ad071a/transformed/jetified-react-android-0.76.2-debug/prefab/modules/reactnative/libs/android.arm64-v8a/libreactnative.so"
+      ]
+    }
+  }
+}

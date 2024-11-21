@@ -1,0 +1,23 @@
+                        -H/home/glodielukose/react-native/react-native-todo-app/node_modules/react-native/ReactAndroid/cmake-utils/default-app-setup
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_SYSTEM_VERSION=24
+-DANDROID_PLATFORM=android-24
+-DANDROID_ABI=x86_64
+-DCMAKE_ANDROID_ARCH_ABI=x86_64
+-DANDROID_NDK=/home/glodielukose/Android/Sdk/ndk/26.1.10909125
+-DCMAKE_ANDROID_NDK=/home/glodielukose/Android/Sdk/ndk/26.1.10909125
+-DCMAKE_TOOLCHAIN_FILE=/home/glodielukose/Android/Sdk/ndk/26.1.10909125/build/cmake/android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=/home/glodielukose/Android/Sdk/cmake/3.22.1/bin/ninja
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/home/glodielukose/react-native/react-native-todo-app/android/app/build/intermediates/cxx/Debug/5f4i6a15/obj/x86_64
+-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=/home/glodielukose/react-native/react-native-todo-app/android/app/build/intermediates/cxx/Debug/5f4i6a15/obj/x86_64
+-DCMAKE_BUILD_TYPE=Debug
+-DCMAKE_FIND_ROOT_PATH=/home/glodielukose/react-native/react-native-todo-app/android/app/.cxx/Debug/5f4i6a15/prefab/x86_64/prefab
+-B/home/glodielukose/react-native/react-native-todo-app/android/app/.cxx/Debug/5f4i6a15/x86_64
+-GNinja
+-DPROJECT_BUILD_DIR=/home/glodielukose/react-native/react-native-todo-app/android/app/build
+-DREACT_ANDROID_DIR=/home/glodielukose/react-native/react-native-todo-app/node_modules/react-native/ReactAndroid
+-DANDROID_STL=c++_shared
+-DANDROID_USE_LEGACY_TOOLCHAIN_FILE=ON
+                        Build command args: []
+                        Version: 2

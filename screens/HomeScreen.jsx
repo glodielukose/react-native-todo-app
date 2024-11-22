@@ -13,6 +13,10 @@ const HomeScreen = () => {
         "Fix dad's tablet",
         'Talk with Steve about this trip',
     ])
+
+    const handleAddTask = (newTask) => {
+        setTasks([...tasks, newTask])
+    }
     
     return (
         <View style={styles.container}>
@@ -26,7 +30,7 @@ const HomeScreen = () => {
                 keyExtractor={(index) => index?.toString()}
                 contentContainerStyle={styles.list}
             />
-            <InputContainer />
+            <InputContainer onAddTask={handleAddTask} />
         </View>
     )
 }

@@ -141,4 +141,4 @@ ios/Pods/
 *.xcuserdata/
 
 
-__test__
+__test__/

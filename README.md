@@ -1,79 +1,166 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+Voici un modèle complet pour le fichier **README.md** de votre application React Native. Adaptez-le selon les spécificités de votre projet. 
 
-# Getting Started
+---
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+# **React Native Todo App**
 
-## Step 1: Start the Metro Server
+Une application de gestion de tâches développée en React Native pour organiser et suivre vos tâches quotidiennes. Cette application est compatible avec Android et iOS.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+---
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## **Table des matières**
 
-```bash
-# using npm
-npm start
+- [Aperçu](#aperçu)
+- [Caractéristiques](#caractéristiques)
+- [Prérequis](#prérequis)
+- [Installation](#installation)
+- [Scripts Disponibles](#scripts-disponibles)
+- [Structure du Projet](#structure-du-projet)
+- [Technologies Utilisées](#technologies-utilisées)
+- [Contribuer](#contribuer)
+- [Licence](#licence)
 
-# OR using Yarn
-yarn start
+---
+
+## **Aperçu**
+
+![Preview de l'application](./assets/screenshot.png)
+
+L'application Todo App offre une interface intuitive pour :
+- Ajouter, modifier et supprimer des tâches.
+- Gérer l'état des tâches (complétées ou non).
+- Organiser les tâches selon leur priorité.
+
+---
+
+## **Caractéristiques**
+
+- 📋 Gestion complète des tâches : Ajouter, modifier et supprimer.
+- ✅ Intégration de Checkboxes pour marquer les tâches terminées.
+- 🎨 Interface utilisateur simple et responsive.
+- 🌑 Mode sombre (si activé dans le système).
+- 📱 Compatible Android et iOS.
+
+---
+
+## **Prérequis**
+
+Avant de commencer, assurez-vous d'avoir installé ces outils :
+
+- **Node.js** (version 16 ou supérieure)  
+- **React Native CLI**  
+- **Android Studio** ou **Xcode** (selon votre cible)  
+- **JDK** (Java Development Kit 11 ou supérieur)  
+- **Git**
+
+---
+
+## **Installation**
+
+1. Clonez le dépôt :
+   ```bash
+   git clone https://github.com/<username>/react-native-todo-app.git
+   cd react-native-todo-app
+   ```
+
+2. Installez les dépendances :
+   ```bash
+   npm install
+   ```
+
+3. Liez les dépendances natives (si nécessaire) :
+   ```bash
+   npx react-native link
+   ```
+
+4. Lancez l'application sur un simulateur ou un appareil connecté :
+   - **Android** :
+     ```bash
+     npx react-native run-android
+     ```
+   - **iOS** :
+     ```bash
+     npx react-native run-ios
+     ```
+
+---
+
+## **Scripts Disponibles**
+
+Voici les commandes disponibles dans le projet :
+
+- **Lancer l'application** :
+  ```bash
+  npx react-native start
+  ```
+
+- **Nettoyer le projet Android** :
+  ```bash
+  cd android && ./gradlew clean && cd ..
+  ```
+
+- **Mettre à jour les dépendances** :
+  ```bash
+  npm install
+  ```
+
+---
+
+## **Structure du Projet**
+
+```
+react-native-todo-app/
+├── android/               # Fichiers spécifiques à Android
+├── ios/                   # Fichiers spécifiques à iOS
+├── src/                   # Code source de l'application
+│   ├── components/        # Composants réutilisables
+│   ├── screens/           # Écrans de l'application
+│   ├── assets/            # Images, icônes et autres ressources
+│   └── utils/             # Fonctions utilitaires
+├── .gitignore             # Liste des fichiers à ignorer par Git
+├── App.js                 # Point d'entrée de l'application
+├── README.md              # Documentation du projet
+├── package.json           # Gestion des dépendances
+└── .eslintrc.js           # Configuration ESLint
 ```
 
-## Step 2: Start your Application
+---
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+## **Technologies Utilisées**
 
-### For Android
+- **React Native** : Framework principal.
+- **React Navigation** : Gestion de la navigation entre les écrans.
+- **@react-native-community/checkbox** : Intégration des checkboxes.
+- **AsyncStorage** : Stockage local pour sauvegarder les tâches.
+- **ESLint et Prettier** : Linting et formatage du code.
 
-```bash
-# using npm
-npm run android
+---
 
-# OR using Yarn
-yarn android
-```
+## **Contribuer**
 
-### For iOS
+Nous accueillons les contributions avec plaisir ! Suivez ces étapes pour contribuer :
 
-```bash
-# using npm
-npm run ios
+1. Forkez le dépôt.
+2. Créez une branche pour votre fonctionnalité ou correction :
+   ```bash
+   git checkout -b feature/nom-de-la-fonctionnalite
+   ```
+3. Commitez vos changements :
+   ```bash
+   git commit -m "feat: description de la fonctionnalité"
+   ```
+4. Poussez votre branche :
+   ```bash
+   git push origin feature/nom-de-la-fonctionnalite
+   ```
+5. Créez une pull request.
 
-# OR using Yarn
-yarn ios
-```
+---
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+## **Licence**
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+Ce projet est sous licence MIT. Consultez le fichier [LICENSE](./LICENSE) pour plus d'informations.
 
-## Step 3: Modifying your App
+---
 
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+**🎉 Merci d'utiliser Todo App !** Si vous avez des questions ou des suggestions, n'hésitez pas à ouvrir une issue. 😊

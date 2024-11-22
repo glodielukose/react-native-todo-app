@@ -1,13 +1,25 @@
 import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
-import React from 'react'
+import { useState } from 'react'
 
-const InputContainer = () => {
+const InputContainer = ({onAddTask}) => {
+  const [newTask, setNewTask] = useState('')
+
+  const handleAddPress = (newTask) => {
+    if(newTask !== ''){
+      onAddTask(newTask)
+      setNewTask('')
+    }
+  }
+
   return (
     <View style={styles.inputContainer}>
       <TextInput 
         style={styles.input}
+        placeholder='I want to ...'
+        value={newTask}
+        onChangeText={(text) => setNewTask(text)}
       />
-      <TouchableOpacity style={styles.addButton}>
+      <TouchableOpacity style={styles.addButton} onPress={() => handleAddPress(newTask)}>
         <Text style={styles.addButtonText}>+</Text>
       </TouchableOpacity>
     </View>

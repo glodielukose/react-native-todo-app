@@ -1,5 +1,6 @@
 import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import { useState } from 'react'
+import MyIcon from './MyIcon'
 
 const InputContainer = ({onAddTask}) => {
   const [newTask, setNewTask] = useState('')
@@ -20,7 +21,7 @@ const InputContainer = ({onAddTask}) => {
         onChangeText={(text) => setNewTask(text)}
       />
       <TouchableOpacity style={styles.addButton} onPress={() => handleAddPress(newTask)}>
-        <Text style={styles.addButtonText}>+</Text>
+        <MyIcon name={'add'} color={'white'} size={20} />
       </TouchableOpacity>
     </View>
   )
@@ -55,11 +56,5 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         marginLeft: 10
 
-    },
-    addButtonText: {
-        fontSize: 20,
-        fontWeight: 'bold',
-        color: 'white',
-        textAlign: 'center',
     }
 })

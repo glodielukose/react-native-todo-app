@@ -1,10 +1,10 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 // import CheckBox from '@react-native-community/checkbox';
 import { useState } from 'react'
 import MyIcon from './MyIcon'
 import { CheckBox } from '@rneui/themed';
 
-const Task = ({task}) => {
+const Task = ({task, index, onDeletteTask}) => {
     const [isChecked, setIsChecked] = useState(false);
     
     return (
@@ -20,7 +20,9 @@ const Task = ({task}) => {
             textStyle={styles.taskText}
         />
         {/* <Text style={styles.taskText}>{task}</Text> */}
-        <MyIcon name={'trash'} color={'#bbb'} size={25}/>
+        <TouchableOpacity onPress={() => onDeletteTask(index)}>
+            <MyIcon name={'trash'} color={'#C70039'} size={25}/>
+        </TouchableOpacity>
     </View>
   )
 }

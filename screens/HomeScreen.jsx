@@ -17,6 +17,10 @@ const HomeScreen = () => {
     const handleAddTask = (newTask) => {
         setTasks([...tasks, newTask])
     }
+
+    const handleDeletteTask = (index) => {
+        setTasks((prevTasks) => prevTasks.filter((_, i) => i !== index))
+    }
     
     return (
         <View style={styles.container}>
@@ -24,8 +28,8 @@ const HomeScreen = () => {
 
             <FlatList 
                 data={tasks}
-                renderItem={({item}) => (
-                    <Task task={item}/>
+                renderItem={({item, index}) => (
+                    <Task task={item} index={index} onDeletteTask={handleDeletteTask}/>
                 )}
                 keyExtractor={(index) => index?.toString()}
                 contentContainerStyle={styles.list}

@@ -5,22 +5,36 @@ import InputContainer from '../components/InputContainer'
 
 const HomeScreen = () => {
     const [tasks, setTasks] = useState([
-        'Plan the family trip to Norway',
-        "Plan David's birthday event",
-        'Groceries for dinner',
-        'Send the presentation to Jeff',
-        'Take the jacket to dry cleaning',
-        "Fix dad's tablet",
-        'Talk with Steve about this trip',
+        {
+            id : '1',
+            task: 'Plan the family trip to Norway',
+            checked : true
+        },
+        {
+            id : '2',
+            task: "Plan David's birthday event",
+            checked : true
+        },
+        {
+            id : '3',
+            task: 'Groceries for dinner',
+            checked : true
+        },
+        {
+            id : '4',
+            task: 'Send the presentation to Jeff',
+            checked : true
+        },
     ])
 
     const handleAddTask = (newTask) => {
-        setTasks([...tasks, newTask])
+        setTasks([...tasks, { id: Date.now().toString(), task: newTask, checked: false}])
     }
 
     const handleDeletteTask = (index) => {
-        setTasks((prevTasks) => prevTasks.filter((_, i) => i !== index))
+        setTasks((prevTasks) => prevTasks.filter((task) => task.id !== index))
     }
+    
     
     return (
         <View style={styles.container}>
@@ -28,10 +42,10 @@ const HomeScreen = () => {
 
             <FlatList 
                 data={tasks}
-                renderItem={({item, index}) => (
-                    <Task task={item} index={index} onDeletteTask={handleDeletteTask}/>
+                renderItem={({item}) => (
+                    <Task task={item} index={item.id} onDeletteTask={handleDeletteTask}/>
                 )}
-                keyExtractor={(index) => index?.toString()}
+                keyExtractor={(item) => item.id}
                 contentContainerStyle={styles.list}
             />
             <InputContainer onAddTask={handleAddTask} />

@@ -11,8 +11,8 @@ const Task = ({task, index, onDeletteTask}) => {
     <View style={styles.taskContainer}>
         <CheckBox
             center
-            title={task}
-            checked={isChecked}
+            title={task.task}
+            checked={task.checked}
             onPress={() => setIsChecked(!isChecked)}
             containerStyle={{
                 padding: 0

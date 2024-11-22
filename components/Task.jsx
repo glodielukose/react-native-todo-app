@@ -4,7 +4,7 @@ import { useState } from 'react'
 import MyIcon from './MyIcon'
 import { CheckBox } from '@rneui/themed';
 
-const Task = ({task, index, onDeletteTask}) => {
+const Task = ({task, index, onDeletteTask, onCheckedTask}) => {
     const [isChecked, setIsChecked] = useState(false);
     
     return (
@@ -13,7 +13,7 @@ const Task = ({task, index, onDeletteTask}) => {
             center
             title={task.task}
             checked={task.checked}
-            onPress={() => setIsChecked(!isChecked)}
+            onPress={() => onCheckedTask(index)}
             containerStyle={{
                 padding: 0
             }}

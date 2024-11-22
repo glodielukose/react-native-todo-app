@@ -45,7 +45,8 @@ const styles = StyleSheet.create({
         borderColor: '#ddd',
         borderRadius: 20,
         height: 40,
-        paddingHorizontal: 15
+        paddingHorizontal: 15,
+        fontSize: 16
     },
     addButton: {
         height: 40,

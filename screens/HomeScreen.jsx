@@ -8,22 +8,22 @@ const HomeScreen = () => {
         {
             id : '1',
             task: 'Plan the family trip to Norway',
-            checked : true
+            checked : false
         },
         {
             id : '2',
             task: "Plan David's birthday event",
-            checked : true
+            checked : false
         },
         {
             id : '3',
             task: 'Groceries for dinner',
-            checked : true
+            checked : false
         },
         {
             id : '4',
             task: 'Send the presentation to Jeff',
-            checked : true
+            checked : false
         },
     ])
 
@@ -34,6 +34,14 @@ const HomeScreen = () => {
     const handleDeletteTask = (index) => {
         setTasks((prevTasks) => prevTasks.filter((task) => task.id !== index))
     }
+
+    const handleCheckedTask = (id) => {
+        setTasks((prevTasks) =>
+            prevTasks.map((task) =>
+                task.id === id ? { ...task, checked: !task.checked } : task
+            )
+        );
+    }
     
     
     return (
@@ -43,7 +51,12 @@ const HomeScreen = () => {
             <FlatList 
                 data={tasks}
                 renderItem={({item}) => (
-                    <Task task={item} index={item.id} onDeletteTask={handleDeletteTask}/>
+                    <Task 
+                        task={item} 
+                        index={item.id} 
+                        onDeletteTask={handleDeletteTask}
+                        onCheckedTask={handleCheckedTask}
+                    />
                 )}
                 keyExtractor={(item) => item.id}
                 contentContainerStyle={styles.list}

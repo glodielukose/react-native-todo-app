@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "RNVectorIconsSpec_autolinked_build",
+		"source" : "/home/glodielukose/react-native/react-native-todo-app/node_modules/react-native-vector-icons/android/build/generated/source/codegen/jni"
+	}
+}

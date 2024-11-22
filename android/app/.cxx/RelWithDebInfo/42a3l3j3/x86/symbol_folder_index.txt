@@ -1,0 +1,1 @@
+/home/glodielukose/react-native/react-native-todo-app/android/app/build/intermediates/cxx/RelWithDebInfo/42a3l3j3/obj/x86

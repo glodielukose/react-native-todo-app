@@ -142,3 +142,10 @@ ios/Pods/
 
 
 __test__/
+
+# Ignorer les keystores
+*.keystore
+*.jks
+
+# Ignorer les fichiers contenant des clés
+keys.properties

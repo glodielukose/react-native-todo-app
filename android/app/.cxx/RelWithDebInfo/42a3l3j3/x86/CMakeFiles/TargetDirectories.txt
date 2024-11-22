@@ -1,0 +1,9 @@
+/home/glodielukose/react-native/react-native-todo-app/android/app/.cxx/RelWithDebInfo/42a3l3j3/x86/CMakeFiles/appmodules.dir
+/home/glodielukose/react-native/react-native-todo-app/android/app/.cxx/RelWithDebInfo/42a3l3j3/x86/CMakeFiles/edit_cache.dir
+/home/glodielukose/react-native/react-native-todo-app/android/app/.cxx/RelWithDebInfo/42a3l3j3/x86/CMakeFiles/rebuild_cache.dir
+/home/glodielukose/react-native/react-native-todo-app/android/app/.cxx/RelWithDebInfo/42a3l3j3/x86/safeareacontext_autolinked_build/CMakeFiles/react_codegen_safeareacontext.dir
+/home/glodielukose/react-native/react-native-todo-app/android/app/.cxx/RelWithDebInfo/42a3l3j3/x86/safeareacontext_autolinked_build/CMakeFiles/edit_cache.dir
+/home/glodielukose/react-native/react-native-todo-app/android/app/.cxx/RelWithDebInfo/42a3l3j3/x86/safeareacontext_autolinked_build/CMakeFiles/rebuild_cache.dir
+/home/glodielukose/react-native/react-native-todo-app/android/app/.cxx/RelWithDebInfo/42a3l3j3/x86/RNVectorIconsSpec_autolinked_build/CMakeFiles/react_codegen_RNVectorIconsSpec.dir
+/home/glodielukose/react-native/react-native-todo-app/android/app/.cxx/RelWithDebInfo/42a3l3j3/x86/RNVectorIconsSpec_autolinked_build/CMakeFiles/edit_cache.dir
+/home/glodielukose/react-native/react-native-todo-app/android/app/.cxx/RelWithDebInfo/42a3l3j3/x86/RNVectorIconsSpec_autolinked_build/CMakeFiles/rebuild_cache.dir

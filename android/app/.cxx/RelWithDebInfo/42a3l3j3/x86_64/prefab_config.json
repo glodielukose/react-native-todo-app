@@ -1,0 +1,9 @@
+{
+  "enabled": true,
+  "prefabPath": "/home/glodielukose/.gradle/caches/modules-2/files-2.1/com.google.prefab/cli/2.1.0/aa32fec809c44fa531f01dcfb739b5b3304d3050/cli-2.1.0-all.jar",
+  "packages": [
+    "/home/glodielukose/.gradle/caches/8.10.2/transforms/bbf74928c6c7c350080a09f2e3bddcc3/transformed/jetified-react-android-0.76.2-release/prefab",
+    "/home/glodielukose/.gradle/caches/8.10.2/transforms/de52f4869a4c69f2349c0e3b023c29ed/transformed/jetified-hermes-android-0.76.2-release/prefab",
+    "/home/glodielukose/.gradle/caches/8.10.2/transforms/0b396a6571faea36ef3e81439b17aeab/transformed/jetified-fbjni-0.6.0/prefab"
+  ]
+}
